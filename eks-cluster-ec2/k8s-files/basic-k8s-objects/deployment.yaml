@@ -16,7 +16,7 @@ spec:
       run: nginx
       type: frontend
   replicas: 3
-  strategy:
+  strategy:     ## even if you dont mention this, it will use rolling by default
     rollingUpdate:
       maxSurge: 5 #25%
       maxUnavailable: 5 #25%

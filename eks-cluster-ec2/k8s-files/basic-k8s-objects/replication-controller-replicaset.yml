@@ -32,7 +32,7 @@ spec:
   # modify replicas according to your case
   replicas: 5
   selector:    # Required field in Replicaset
-    matchLabels:
+    matchLabels:   ##Replica set can also take matchExpressions. Any pod that has multiple lables
       run: nginx
       app: myapp
   template:
