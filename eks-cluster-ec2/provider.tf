@@ -11,6 +11,7 @@ terraform {
 
 provider "aws" {
   region = var.region
+  # profile = "Abey"
   default_tags {
     tags = {
       Name    = "k8s_immersion_batch"
